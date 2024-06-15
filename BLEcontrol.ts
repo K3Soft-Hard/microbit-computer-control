@@ -7,10 +7,10 @@ namespace Control {
     }
 
     //%blockId="MCCsendToChat"
-    //%block="send $message to chat || $color"
+    //%block="send $message to chat||$color"
     //%group="Minecraft"
     //%advanced=true
-    export function sendToChat(message: string, color: Colors) {
+    export function sendToChat(message: string, color: Colors = Colors.none) {
         switch (color) {
             case Colors.none:
                 keyboard.sendString("t")

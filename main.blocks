@@ -1,1 +1,1 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="t:}q1m36=y97Yneepis{" x="252" y="308"><statement name="HANDLER"><block type="MCCsendToChat" id="RtYn*$BNYoH!Vnxp3~DD"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="message"><shadow type="text" id="a#I1A7:mrf%;%L,/#MSP"><field name="TEXT"></field></shadow></value></block></statement></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="t:}q1m36=y97Yneepis{" x="0" y="0"></block></xml>
