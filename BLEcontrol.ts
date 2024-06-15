@@ -2,12 +2,13 @@
 //%advanced=true weight=100 
 namespace Control {
     enum Colors {
-        none = 0,
-        cyan=1
+        none = 1,
+        cyan = 2,
+        red = 3
     }
 
     //%blockId="MCCsendToChat"
-    //%block="send $message to chat||$color"
+    //%block="send $message to chat || $color"
     //%group="Minecraft"
     //%advanced=true
     export function sendToChat(message: string, color: Colors = Colors.none) {
@@ -24,6 +25,14 @@ namespace Control {
                 keyboard.sendString("t")
                 basic.pause(80)
                 keyboard.sendString("§b" + message)
+                basic.pause(25)
+                keyboard.sendString(keyboard.keys(keyboard._Key.enter))
+                keyboard.sendString(keyboard.keys(keyboard._Key.escape))
+                break
+            case Colors.red:
+                keyboard.sendString("t")
+                basic.pause(80)
+                keyboard.sendString("§m" + message)
                 basic.pause(25)
                 keyboard.sendString(keyboard.keys(keyboard._Key.enter))
                 keyboard.sendString(keyboard.keys(keyboard._Key.escape))
