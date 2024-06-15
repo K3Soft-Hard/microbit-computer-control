@@ -1,10 +1,11 @@
 //% color=#1E90FF icon="\uf205"
 //%advanced=true weight=100 
 namespace Control {
-    enum Colors {
+    export enum Colors {
         none = 1,
         cyan = 2,
-        red = 3
+        red = 3,
+        random = 4
     }
 
     //%blockId="MCCsendToChat"
@@ -33,6 +34,14 @@ namespace Control {
                 keyboard.sendString("t")
                 basic.pause(80)
                 keyboard.sendString("§m" + message)
+                basic.pause(25)
+                keyboard.sendString(keyboard.keys(keyboard._Key.enter))
+                keyboard.sendString(keyboard.keys(keyboard._Key.escape))
+                break
+            case Colors.random:
+                keyboard.sendString("t")
+                basic.pause(80)
+                keyboard.sendString("§k" + message)
                 basic.pause(25)
                 keyboard.sendString(keyboard.keys(keyboard._Key.enter))
                 keyboard.sendString(keyboard.keys(keyboard._Key.escape))
