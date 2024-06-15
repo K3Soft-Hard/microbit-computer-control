@@ -1,1 +1,6 @@
-
+keyboard.sendString("t")
+basic.pause(80)
+keyboard.sendString("message")
+basic.pause(25)
+keyboard.sendString(keyboard.keys(keyboard._Key.enter))
+keyboard.sendString(keyboard.keys(keyboard._Key.escape))
