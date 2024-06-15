@@ -1,4 +1,4 @@
-//% color=#5C2D91 icon="\uf205"
+//% color=#1E90FF icon="\uf205"
 //%advanced=true weight=100 
 namespace Control {
     enum Colors {
@@ -43,5 +43,12 @@ namespace Control {
     //%advanced=true
     export function inventory() {
         keyboard.sendString("e")
+    }
+    //%blockId="MCCinitialize"
+    //%block="initialize BLE Control extension"
+    //%group="Initialize"
+    //%advanced=false
+    export function initialize() {       
+        keyboard.startKeyboardService()
     }
 }
